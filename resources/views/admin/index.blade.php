@@ -11,7 +11,7 @@
     <div class="wrapper d-flex flex-column min-vh-100">
         @include('admin.nav-header')
         <div class="body flex-grow-1">
-            @include('admin.container')
+            @yield('main-content')
         </div>
         @include('admin.footer')
     </div>

@@ -1,3 +1,5 @@
+@extends('admin.index')
+@section('main-content')
 <div class="container-lg px-4">
     <div class="row mb-4">
         <div class="col-xl-5 col-xxl-4 mb-4 mb-xl-0">
@@ -752,3 +754,5 @@
     </div>
     <!-- /.row-->
 </div>
+
+@endsection
