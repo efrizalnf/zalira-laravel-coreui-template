@@ -12,7 +12,7 @@
     </div>
     <ul class="sidebar-nav" data-coreui="navigation" data-simplebar="">
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('home') }}">
+            <a class="nav-link" href="{{ route('dashboard') }}">
                 <svg class="nav-icon">
                     <use xlink:href="{{ asset('admin/vendors/@coreui/icons/svg/free.svg#cil-speedometer')}}"></use>
                 </svg>

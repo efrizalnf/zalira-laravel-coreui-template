@@ -94,12 +94,14 @@
                             <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-file"></use>
                         </svg> Projects<span class="badge badge-sm bg-primary ms-2">42</span></a>
                     <div class="dropdown-divider"></div><a class="dropdown-item" href="#">
-                        <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-lock-locked"></use>
-                        </svg> Lock Account</a><a class="dropdown-item" href="#">
-                        <svg class="icon me-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-account-logout"></use>
-                        </svg> Logout</a>
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                <svg class="icon me-2">
+                                    <use xlink:href="{{ asset('admin/vendors/@coreui/icons/svg/free.svg#cil-account-logout') }}"></use>
+                                </svg> {{ __('Log Out') }}</a>
+                        </form>
                 </div>
             </li>
         </ul>
