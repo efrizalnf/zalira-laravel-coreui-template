@@ -11,22 +11,25 @@
         <button class="btn-close d-lg-none" type="button" data-coreui-dismiss="offcanvas" data-coreui-theme="dark" aria-label="Close" onclick="coreui.Sidebar.getInstance(document.querySelector(&quot;#sidebar&quot;)).toggle()"></button>
     </div>
     <ul class="sidebar-nav" data-coreui="navigation" data-simplebar="">
-        <li class="nav-item"> <a class="nav-link" href="{{ route('home') }}">
-                <svg class="nav-icon"> <a class="nav-link" href="{{ route('home') }}">
-                        <use xlink:href="{{ asset('admin/vendors/@coreui/icons/svg/free.svg#cil-speedometer')}}"></use>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('home') }}">
+                <svg class="nav-icon">
+                    <use xlink:href="{{ asset('admin/vendors/@coreui/icons/svg/free.svg#cil-speedometer')}}"></use>
                 </svg>
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>{{ __('Dashboard') }}</span><span class="badge badge-sm bg-info ms-auto">NEW</span>
             </a>
         </li>
         <li class="nav-title">Fitur 1</li>
-        <li class="nav-item"><a class="nav-link" href="{{ route('home') }}">
-                <svg class="nav-icon"> <a class="nav-link" href="{{ route('home') }}">
-                        <use xlink:href="{{ asset('admin/vendors/@coreui/icons/svg/free.svg#cil-pencil')}}"></use>
-                </svg>
-                <i class="fas fa-fw fa-tachometer-alt"></i>
-                <span>{{ __('Item 1') }}</span>
-            </a></li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('login') }}">
+                <!-- <svg class="nav-icon">
+                    <use xlink:href="{{ asset('admin/vendors/@coreui/icons/svg/free.svg#cil-pencil')}}"></use>
+                </svg> -->
+                <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+                <span class="nav-icon"><span class="nav-icon"></span></span><span>Item 1</span>
+            </a>
+        </li>
         <li class="nav-title">Components</li>
         <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
                 <svg class="nav-icon">
