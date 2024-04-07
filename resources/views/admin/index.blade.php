@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>CoreUI Free Bootstrap Admin Template</title>
+    <title>{{ config('app.name', 'Zalira Admin Panel') }}</title>
     @include('admin.head')
 </head>
 
