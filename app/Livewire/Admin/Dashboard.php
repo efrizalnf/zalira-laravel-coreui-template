@@ -3,8 +3,9 @@
 namespace App\Livewire\Admin;
 
 use App\Http\Controllers\DashboardController;
+use Livewire\Attributes\Title;
 use Livewire\Component;
-
+#[Title('Dashboard')]
 class Dashboard extends Component
 {
     public function __construct()

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>{{ config('app.name', 'Zalira Admin Panel') }}</title>
+    <title>{{ $title ?? 'Zalira Admin Panel' }}</title>
     @include('livewire.admin.head')
 </head>
 
