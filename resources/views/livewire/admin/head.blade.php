@@ -31,6 +31,8 @@
 <link href="{{ asset('admin/css/examples.css')}}" rel="stylesheet">
 <!-- We use those styles to style Carbon ads and CoreUI PRO banner, you should remove them in your application.-->
 <link href="{{ asset('admin/css/ads.css')}}" rel="stylesheet">
-<script src="{{ asset('admin/js/c')}}onfig.js"></script>
-<script src="{{ asset('admin/js/color-')}}modes.js"></script>
+<script src="{{ asset('admin/js/config.js')}}"></script>
+<script src="{{ asset('admin/js/color-modes.js')}}"></script>
 <link href="{{ asset('admin/vendors/@coreui/chartjs/css/coreui-chartjs.css')}}" rel="stylesheet">
+
+

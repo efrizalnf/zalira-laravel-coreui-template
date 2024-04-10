@@ -3,17 +3,18 @@
 
 <head>
     <title>{{ config('app.name', 'Zalira Admin Panel') }}</title>
-    @include('admin.head')
+    @include('livewire.admin.head')
 </head>
 
 <body>
-    @include('admin.sidebar')
+    @include('livewire.admin.sidebar')
     <div class="wrapper d-flex flex-column min-vh-100">
-        @include('admin.nav-header')
+        @include('livewire.admin.nav-header')
         <div class="body flex-grow-1">
-            @yield('main-content')
+            {{-- @yield('main-content') --}}
+            {{ $slot }}
         </div>
-        @include('admin.footer')
+        @include('livewire.admin.footer')
     </div>
     <!-- CoreUI and necessary plugins-->
     <script src="{{ asset('admin/vendors/@coreui/coreui/js/coreui.bundle.min.js')}}"></script>

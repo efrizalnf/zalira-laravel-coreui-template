@@ -1,5 +1,6 @@
-@extends('admin.index')
-@section('main-content')
+<div>
+{{-- @extends('livewire.admin.index') --}}
+{{-- @section('main-content') --}}
 <div class="container-lg px-4">
     <div class="row mb-4">
     <div class="row g-4 mb-4">
@@ -741,4 +742,5 @@
     <!-- /.row-->
 </div>
 
-@endsection
+{{-- @endsection --}}
+</div>
