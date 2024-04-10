@@ -22,12 +22,12 @@
         </li>
         <li class="nav-title">Fitur 1</li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('login') }}">
+            <a class="nav-link" href="{{ route('fitur1') }}">
                 <!-- <svg class="nav-icon">
                     <use xlink:href="{{ asset('admin/vendors/@coreui/icons/svg/free.svg#cil-pencil')}}"></use>
                 </svg> -->
                 <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
-                <span class="nav-icon"><span class="nav-icon"></span></span><span>Item 1</span>
+                <span class="nav-icon"><span class="nav-icon"></span></span><span>{{ __('Fitur1') }}</span>
             </a>
         </li>
         <li class="nav-title">Components</li>

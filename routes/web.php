@@ -3,6 +3,7 @@
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProfileController;
 use App\Livewire\Admin\Dashboard;
+use App\Livewire\Admin\Fitur1\Fitur1;
 use Illuminate\Support\Facades\Route;
 
 // Halaman utama
@@ -13,6 +14,7 @@ Route::get('/', function () {
 // Dashboard dengan middleware auth dan verified
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', Dashboard::class)->name('dashboard');
+    Route::get('/fitur1', Fitur1::class)->name('fitur1');
 });
 
 // Grup route untuk profile dengan middleware auth
