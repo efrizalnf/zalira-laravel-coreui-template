@@ -27,5 +27,8 @@ Route::middleware('auth')->group(function () {
         ->name('profile.destroy');
 });
 
+Route::fallback(function () {
+    return view('layouts.maintenance');
+});
 // Include file auth
 require __DIR__.'/auth.php';

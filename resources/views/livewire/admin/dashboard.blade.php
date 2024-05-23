@@ -1,7 +1,7 @@
 <div>
 {{-- @extends('livewire.admin.index') --}}
 {{-- @section('main-content') --}}
-<div class="container-lg px-4">
+<div class="container-lg px-4" >
     <div class="row mb-4">
     <div class="row g-4 mb-4">
         <div class="col-sm-6 col-xl-3">
